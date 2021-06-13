@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      text-align: center;
+      font-family: "微軟正黑體";
+      border: 2px solid black;
+      width: 1024px;
+      height: 768px;
+
+
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+
+
+      /* position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); */
+
+
+
+      display: flex; /* 容器 */
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+
+      justify-content: center; /* 主軸分配 */
+      align-items: center; /* 交軸分配 */
+
+    }
+
+    .header{
+      background: black;
+      height: 128px;
+      width:100%;
+      color: white;
+      line-height: 128px;
+      font-size: 3em;
+      position: top;
+    }
+    .left{
+      background: rgb(163, 163, 163);
+      height: 512px;
+      width:20%;
+      color: white;
+      line-height: 512px;
+      font-size: 3em;
+      float: left;
+    }
+    .right{
+      background: rgb(100, 100, 100);
+      height: 512px;
+      width:80%;
+      color: white;
+      line-height: 512px;
+      font-size: 3em;
+      float: left;
+    }
+    .footer{
+      background: black;
+      height: 128px;
+      width:100%;
+      color: white;
+      line-height: 128px;
+      font-size: 3em;
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>

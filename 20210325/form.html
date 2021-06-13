@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 如果要傳檔案一定要使用屬性 method="post" enctyper="multipart/form-data" -->
+    <form action="api.html" method="post" enctyper="multipart/form-data">
+        <fieldset>
+            <legend>表單介紹</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td required>帳號:</td>
+                        <td><input type="text" name="acc" required placeholder="huhuhu"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="" id="pwd"></td>
+                    </tr>
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <input type="radio" name="gender" value="boy" id="fieldBoy">
+                            <label for="fieldBoy">男</label>
+                            <input type="radio" name="gender" value="girl">女
+                            <input type="radio" name="gender" value="unknow" checked>不公開<!-- checked是預選 -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>興趣:</td>
+                        <td>
+                            <label><input type="checkbox" name="a1" value="攝影">攝影</label>
+                            <input type="checkbox" name="a2" value="旅行">旅行
+                            <input type="checkbox" name="a3" value="美食">美食
+                            <input type="checkbox" name="a4" value="書籍">書籍
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>出生年:</td>
+                        <td>
+                            <select name="yesrs" id="">
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991" selected>1991</option>
+                                <option value="1992">1992</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>檔案上傳:</td>
+                        <td>
+                            <input type="file" name="upload">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>留言:</td>
+                        <td>
+                            <textarea name="msg" id="" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <td>
+                        <input type="datetime-local" name="" id=""></tr>
+                    </td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="submit" value="提交"></td>
+                        <td><input type="reset" value="重置"></td>
+                    </tr>
+                </tfoot>
+            
+            </table>
+        </fieldset>
+    </form>
+
+
+
+
+    <hr>
+    <form action="back.php" method="GET"><!-- Default Method : GET -- method="get"預設可以不用打 -->
+        <p>Account:<input type="text" name="acc"></p>
+        <p>Password:<input type="password" nacme="ppp"></p>
+        <p><input type="submit" value="提交"></p>
+    </form>
+
+    
+    
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關係偽類</title>
+  <style>
+
+  p:first-child{
+    color: blueviolet;
+  }
+
+  p:last-child{
+    color: brown;
+  }
+
+  /* 如果第三個是p就會中 */
+  p:nth-child(3){
+    color: aqua;
+  }   
+  /* 雙數就會有，可用於表格                                                                  */
+  nav:nth-child(n+1){
+    color: aqua;
+  }
+  nav:nth-child(2n+1){
+    color: aqua;
+  }
+  /* 奇數 */
+  nav:nth-child(odd){
+    color: aqua;
+  }
+  p:nth-last-child(){/* 倒數第三個 */
+    color: aqua;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <h1>NTH-child</h1>
+  <p>指找到父層之指定兒子</p>
+  <hr>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <nav>Lorem ipsum dolor sit amet consectetur.</nav>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+  
+</body>
+</html>

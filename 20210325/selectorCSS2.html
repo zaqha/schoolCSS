@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  /* 子孫 */
+  nav p{
+    color:cadetblue
+  }
+  /* > 代表兒子 */
+  nav>p{
+    color: cornflowerblue;
+  }
+  nav{
+    color: green;
+  }
+  /* 相鄰: A對象鄰居的B */
+
+  h1+ p{
+    color:blue;
+  }
+
+  /* 相鄰: A對象之後的所有B */
+
+  h2 ~ p{
+    color: yellow;
+  }
+
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae.</p>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae</div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae.</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae.</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae.</p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae</div>
+  </nav>
+
+
+</body>
+</html>

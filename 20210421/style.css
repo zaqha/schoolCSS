@@ -1,0 +1,7 @@
+@import "print.css" print;
+@import "screen.css" screen;
+
+
+body{
+  color: red;
+}

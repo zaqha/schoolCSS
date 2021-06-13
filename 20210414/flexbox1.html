@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .flex{
+    display: flex;
+    height: 1000px;
+    background: lightpink;
+
+
+
+    justify-content: flex-start;
+    align-items: stretch;
+    /* 當不設定指定交軸空間單位則田買整個容器 */
+    /* space-around 含margin平均分配 space-between space-evenly*/
+
+
+    /* flex-direction: column-reverse; */
+    /* 排列方向變成由上到下排列   reverse由下到上    橫向: row */
+
+    flex-wrap: row wrap;
+    /* 不可換行 */
+    flex-flow: row wrap;
+
+    /* 可將上面兩個寫成 flex-flow: row-reverse wrap-reverse; */
+    
+    align-content: space-around;
+
+    /* 不同長文字 等齊排列 新聞網站字數不同效果*/
+    /* align-items: stretch;
+    align-content: flex-start; */
+  }
+  .item{
+    width: 100px;
+
+  }
+
+  .red{
+    background: red;
+    align-self: flex-end;
+  }
+
+  .green{
+    background: green;
+  }
+
+  .blue{
+    background: blue;
+    align-self: stretch;
+  }
+  .inlineflex{
+    display: inline-flex;
+  }
+
+</style>
+</head>
+<body>
+  <strong class="flex">
+    <span class="item red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, provident.</span>
+    <span class="item green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut fugiat natus id veniam sequi voluptas quaerat, odio voluptatem quis tempore ipsa doloremque eaque suscipit molestias. At nulla vitae asperiores.</span>
+    <span class="item blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, reprehenderit!</span>
+    <span class="item red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, provident.</span>
+    <span class="item green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut fugiat natus id veniam sequi voluptas quaerat, odio voluptatem quis tempore ipsa doloremque eaque suscipit molestias. At nulla vitae asperiores.</span>
+    <span class="item green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut fugiat natus id veniam sequi voluptas quaerat, odio voluptatem quis tempore ipsa doloremque eaque suscipit molestias. At nulla vitae asperiores.</span>
+    <span class="item green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aut fugiat natus id veniam sequi voluptas quaerat, odio voluptatem quis tempore ipsa doloremque eaque suscipit molestias. At nulla vitae asperiores.</span>
+
+
+
+  </strong>
+<br>
+<br>
+  <strong class="inlineflex">
+    <span class="item red">1</span>
+    <span class="item green">2</span>
+    <span class="item blue">3</span>
+  </strong>
+
+</body>
+</html>

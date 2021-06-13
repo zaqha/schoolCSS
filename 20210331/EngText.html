@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      width: 9rem;
+      background: pink;
+    }
+    p.demo1{
+    word-break: keep-all;
+    }
+    p.demo2{
+    word-break: break-all;
+    }
+    p.demo3{
+    word-break: break-word;
+    }
+    p.demo4{
+    white-space: pre-wrap;
+    /* normal,pre,nowrap,pre-wrap */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>word-break: keep-all</h1>
+  <p class="demo1">Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</p>
+  <h1>word-break: break-all</h1>
+  <p class="demo2">Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</p>
+  <h1>word-break: break-word</h1>
+  <p class="demo3">Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</p>
+  <h1>white-space: pre-wrap</h1>
+  <p class="demo4">
+    A
+      B
+        C
+          Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</p>
+</body>
+</html>

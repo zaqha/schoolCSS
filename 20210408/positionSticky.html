@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img{
+      width: 100%;
+      display: block;
+    }
+
+    nav{
+      background: pink;
+      padding: 10px;
+      text-align: right;
+      position: sticky;
+      top: 20px;
+    }
+    nav>a{
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      padding: 10px;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav>a:hover{
+      background: white;
+      color: pink;
+      }
+
+  </style>
+</head>
+<body>
+  <img src="https://picsum.photos/1920/1080/?random=1">
+  <nav>
+    <a href="#">Link A</a>
+    <a href="#">Link A</a>
+    <a href="#">Link A</a>
+    <a href="#">Link A</a>
+    <a href="#">Link A</a>
+  </nav>
+  <img src="https://picsum.photos/1920/1080/?random=2">
+  <img src="https://picsum.photos/1920/1080/?random=3">
+
+
+
+</body>
+</html>-block;
+      /* float: left; */
+    }
+    .relative{
+      position: relative;
+      background: lightcoral;
+      top: 25px;
+      left: -90px;
+      z-index: -9;
+    }
+    .absolute{
+      background: lightgreen;
+      position: absolute;
+      top: 65px;
+      left: -15px;
+      z-index: 99;
+    }
+    .close{
+      position: absolute;
+      background: red;
+      top: -30px;
+      right: -30px;
+      opacity: 70%;
+      border-radius: 20%;
+
+    }
+    .fixed{
+      position:fixed;
+      background: lightseagreen;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="bigbox">
+      <div class="box">01</div>
+      <div class="box">02</div>
+      <div class="box">03</div>
+      <div class="box">04</div>
+      <div class="box">05</div>
+      <div class="box">06</div>
+      <div class="box relative">07</div>
+      <div class="box">08</div>
+      <div class="box">09</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box absolute">13</div>
+      <div class="box">14</div>
+      <div class="box fixed">15</div>
+      <div class="box">16</div>
+      <div class="box">17</div>
+      <div class="box">18</div>
+      <div class="box">19</div>
+      <div class="box">20</div>
+      <div class="box close">X</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轉場</title>
+  <style>
+        body{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+      }
+      .box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        line-height: 100px;
+        position: relative;
+        background-color: mediumpurple;
+
+
+      }
+
+      .box::after{
+        content: "After";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: midnightblue;
+        color: red;
+        transform-origin: right bottom;
+        opacity: 0;
+        transition: opacity 0.5s 0s, top 0.5s 0.5s, width 0.5s 1.5s, transform 0.5s 1s;
+    
+      }
+      .box:hover::after{
+        opacity: 1;
+        transform: rotate(90deg);
+        width: 200px;
+        top: 100px;
+        
+      }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="box">BEFORE</div>
+</body>
+</html>

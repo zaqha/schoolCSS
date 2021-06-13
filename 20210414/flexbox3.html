@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .flex{
+    display: flex;
+    height: 50vh;
+    background: lightpink;
+    
+    
+    }
+
+.item{
+  width: 200px;
+  height: 100px;
+  /* flex-grow: 1; 分三等份*/
+  /* 膨脹係數 */
+
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100px;
+/* contact<width(or height)<basics */
+
+  max-width: 50px;
+  
+
+
+}
+  
+    .red{
+    background: red;
+    flex-grow: 0;
+    order: 0;
+    /* 數字越大越往END排 */
+  }
+
+  .green{
+    background: green;
+    flex-grow: 1;
+    order: 1;
+  }
+
+  .blue{
+    background: blue;
+    flex-grow: 2;
+    order: -1;
+  }
+  </style>
+</head>
+<body>
+  <strong class="flex">
+    <span class="item red">111111111111111111111111111111111111</span>
+    <span class="item green">2</span>
+    <span class="item blue">3</span>
+  </strong>
+
+</body>
+</html>

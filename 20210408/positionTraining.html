@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+    }
+
+    .dice{
+      width: 200px;
+      height: 200px;
+      border:1px black solid;
+      border-radius: 10%;
+      background: linear-gradient(to top right, white, rgb(216, 216, 216));
+      box-shadow:0.1rem 0.1rem 0.3rem gray;
+      position: relative;
+      display: inline-block;
+    }
+    .dot{
+      width: 20%;
+      height: 20%;
+      border-radius: 50%;
+      background: black;
+      position: absolute;
+    }
+    
+    .fir1{
+      left:10%;
+      top:10%;
+    }
+    .fir3{
+      right:10%;
+      top:10%;
+    }
+    .sec1{
+      left: 10%;
+      bottom: 40%;
+    }
+    .sec2{
+      /* left: 40%;
+      bottom: 40%; */
+      position: center;
+    }
+    .sec3{
+      right: 10%;
+      bottom: 40%;
+    }
+    .thi1{
+      left: 10%;
+      bottom: 10%;
+    }
+    .thi3{
+      right: 10%;
+      bottom: 10%;
+    }
+    .dice>.red{
+      background: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="dice">
+    <div class="dot sec2 red"></div>
+  </div>
+  <div class="dice">
+    <div class="dot fir1"></div>
+    <div class="dot thi3"></div>
+  </div>
+  <div class="dice">
+    <div class="dot sec2"></div>
+    <div class="dot fir1"></div>
+    <div class="dot thi3"></div>
+  </div>
+  <div class="dice">
+    <div class="dot fir1"></div>
+    <div class="dot fir3"></div>
+    <div class="dot thi1"></div>
+    <div class="dot thi3"></div>
+  </div>
+  <div class="dice">
+    <div class="dot sec2"></div>
+    <div class="dot fir1"></div>
+    <div class="dot fir3"></div>
+    <div class="dot thi1"></div>
+    <div class="dot thi3"></div>
+  </div>
+  <div class="dice">
+    <div class="dot fir1"></div>
+    <div class="dot fir3"></div>
+    <div class="dot sec1"></div>
+    <div class="dot sec3"></div>
+    <div class="dot thi1"></div>
+    <div class="dot thi3"></div>
+  </div>
+
+
+</body>
+</html>

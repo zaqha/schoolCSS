@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.demo1 {
+      width: 9rem;
+      font-size: 20px;
+      background: plum;
+
+      line-height: 40px;
+    }
+    div.demo2 {
+      width: 9rem;
+      font-size: 20px;
+      background: pink;
+
+      line-height: 40px;
+    }
+    div.demo3 {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+      background: pink;
+      text-align: center;
+
+      line-height: 40px;
+      line-height: 200px;
+    }
+    nav{
+      background: purple;
+      text-align: center;
+    }
+    nav>a{
+      /* inline沒有寬跟高，需要轉為block*/
+      color: white;
+      font-size: 50px;
+      height: 100px;
+      width: 150px;
+      display: inline-block;
+      text-align: center;
+      line-height: 100px;
+      text-decoration: none;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="demo1">Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</div>
+  <hr>
+  <div class="demo2">Lorem ipsum dolor sit, amet consectetur pneumonoultramicroscopicsilicovolcanoconiosis adipisicing elit. Tenetur quasi laboriosam sunt nulla modi sint ab repellat inventore animi, et dolorum repudiandae, officiis, facere deleniti cupiditate neque iste. Asperiores, odit esse! Illum accusamus laboriosam error esse soluta hic perferendis ad. Quis atque dolorem quod voluptate porro nam dolorum. Ex, quas!</div>
+  <div class="demo3">Lorem</div>
+  <nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+
+  </nav>
+  <h1>Vertical-align(for inline 行內)</h1>
+  <div>
+    <span>Default</span>
+    <span style="vertical-align: middle;">Lorem</span>
+    <img src="https://fakeimg.pl/50x50" style="vertical-align: middle;">
+    <img src="https://fakeimg.pl/50x50" style="vertical-align: bottom;">
+  </div>
+
+
+</body>
+</html>

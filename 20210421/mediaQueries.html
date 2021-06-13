@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="print.css" media="print"> -->
+
+  <style>
+    @media screen and (min-width:400px) {
+      body{
+        color: red;
+      }
+    }
+    @media (min-width:700px),
+  print {
+    body{
+      color:green;
+    }
+  }
+
+  @media(min-width:400px) and (max-width:700px){
+    h1{
+      color: yellow;
+    }
+  }
+
+  /* ****** */
+@media(min-width:320px) {
+body{
+  background: lightcoral;
+}
+}
+@media(min-width:500px) {
+body{
+  background: lightcyan;
+}
+}
+@media(min-width:700px) {
+body{
+  background: lightskyblue;
+}
+}
+@media(min-width:900px) {
+body{
+  background: lightgreen;
+}
+}
+
+/* ***優先權問題** */
+.box{
+  width: 100%;
+  height: 100px;
+}
+
+@media(min-width:768px){
+  .box{
+    width: 50%;
+    height: 200px;
+    float: left;
+  }
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>

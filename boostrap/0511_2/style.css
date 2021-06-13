@@ -1,0 +1,59 @@
+.main{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.example{
+  font-size: 2.5rem;
+}
+
+.exampleC{
+  max-width:600px;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.blog{
+  background-color: rgb(238, 238, 238);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.topBTN{
+  margin: 0 0.2rem;
+}
+
+
+
+.card{
+  width: 32%;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+img{
+  height: 230px;
+}
+footer{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.navbar-toggler{
+  position: relative;
+  right: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .cardContain{
+    flex-flow: wrap;
+  }
+  .card{
+    width: 100%;
+  }
+}
+

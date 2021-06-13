@@ -1,0 +1,7 @@
+/* import:CSS指令 */
+@import url("forImport.css"); /* sting 文字串 */
+@import 'forImport2.css';
+span{
+  color: beige;
+  background-color: rgb(255, 0, 0);
+}
